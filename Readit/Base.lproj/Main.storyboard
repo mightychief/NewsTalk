@@ -35,8 +35,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="144"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="loading..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" minimumFontSize="12" id="dze-75-NCn">
-                                                    <rect key="frame" x="53" y="8" width="204" height="62"/>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="loading..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" minimumFontSize="12" id="dze-75-NCn">
+                                                    <rect key="frame" x="13" y="8" width="244" height="62"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
                                                     <color key="textColor" red="0.2784313725" green="0.2666666667" blue="0.34509803919999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -51,35 +51,6 @@
                                                     </state>
                                                     <connections>
                                                         <action selector="submittedByButt:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Og-zS-22v"/>
-                                                    </connections>
-                                                </button>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="LAK-1h-yNf">
-                                                    <rect key="frame" x="8" y="3" width="40" height="40"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="13"/>
-                                                    <state key="normal" backgroundImage="upArrow">
-                                                        <color key="titleColor" red="0.2784313725" green="0.2666666667" blue="0.34509803919999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    </state>
-                                                    <connections>
-                                                        <action selector="upVoteButt:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HOU-UI-LyI"/>
-                                                    </connections>
-                                                </button>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" id="Maf-Ab-ewQ">
-                                                    <rect key="frame" x="8" y="37" width="40" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="15"/>
-                                                    <color key="textColor" red="0.41730880615920757" green="0.39848897504648889" blue="0.52195785984848486" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="nXx-jk-Kv3">
-                                                    <rect key="frame" x="8" y="53" width="40" height="40"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="13"/>
-                                                    <state key="normal" backgroundImage="downArrow">
-                                                        <color key="titleColor" red="0.2784313725" green="0.2666666667" blue="0.34509803919999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    </state>
-                                                    <connections>
-                                                        <action selector="downVoteButt:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CeX-23-0xf"/>
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Ifa-km-BLz">
@@ -163,15 +134,12 @@
                                         <connections>
                                             <outlet property="categoryOutlet" destination="Ifa-km-BLz" id="Utj-Qd-ocR"/>
                                             <outlet property="commentsOutlet" destination="4Lr-HE-sXV" id="ZHA-i1-paJ"/>
-                                            <outlet property="downVoteOutlet" destination="nXx-jk-Kv3" id="1lJ-Ox-cw3"/>
                                             <outlet property="newsTitleLabel" destination="dze-75-NCn" id="5wd-F4-bGz"/>
                                             <outlet property="postDateLabel" destination="hyE-8q-Vp3" id="YPV-H9-qyh"/>
                                             <outlet property="reportOutlet" destination="E5n-6f-q54" id="hoj-Do-tLs"/>
                                             <outlet property="saveOutlet" destination="PxE-dV-R1W" id="JdU-r8-m5q"/>
                                             <outlet property="shareOutlet" destination="GBc-to-u5L" id="vB7-SC-cCN"/>
                                             <outlet property="submittedByOutlet" destination="s2m-ig-9H2" id="75K-AD-VVM"/>
-                                            <outlet property="upVoteOutlet" destination="LAK-1h-yNf" id="iNE-2c-uZQ"/>
-                                            <outlet property="votesLabel" destination="Maf-Ab-ewQ" id="TjR-ci-g81"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -330,7 +298,7 @@
                                 <color key="backgroundColor" red="0.28958413004875183" green="0.31462949514389038" blue="0.32950475811958313" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </webView>
                         </subviews>
-                        <color key="backgroundColor" red="0.40877556110000002" green="0.39034056309999998" blue="0.51128472219999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.054901960780000002" green="0.41568627450000001" blue="0.67450980390000004" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
                         <outlet property="webView" destination="dW3-13-PEh" id="e9g-Ck-5vD"/>
@@ -955,13 +923,11 @@
     <resources>
         <image name="closeButt" width="44" height="44"/>
         <image name="commentsButt" width="44" height="44"/>
-        <image name="downArrow" width="44" height="44"/>
         <image name="goBack" width="44" height="44"/>
         <image name="goNext" width="44" height="44"/>
         <image name="logo" width="100" height="100"/>
         <image name="refreshButt" width="44" height="44"/>
         <image name="sortButt" width="44" height="44"/>
-        <image name="upArrow" width="44" height="44"/>
         <image name="userButt" width="44" height="44"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
