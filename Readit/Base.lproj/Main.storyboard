@@ -323,7 +323,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="NewsTalk" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="SWX-f8-GBN">
                                         <rect key="frame" x="110" y="161" width="100" height="27"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="Champagne&amp;Limousines" family="Champagne &amp; Limousines" pointSize="25"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -361,7 +361,7 @@
                                         <rect key="frame" x="30" y="304" width="260" height="48"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.030024570724206986" green="0.25429400610992547" blue="0.41868110625602095" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" name="Champagne&amp;Limousines" family="Champagne &amp; Limousines" pointSize="20"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="Login"/>
                                         <connections>
                                             <action selector="loginButt:" destination="wk2-2C-obM" eventType="touchUpInside" id="jJk-gD-RYD"/>
@@ -391,7 +391,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="TiE-IB-AED">
                                 <rect key="frame" x="178" y="430" width="142" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
-                                <fontDescription key="fontDescription" name="Champagne&amp;Limousines" family="Champagne &amp; Limousines" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" title="Forgot password?"/>
                                 <connections>
                                     <action selector="forgotPasswButt:" destination="wk2-2C-obM" eventType="touchUpInside" id="tcu-E7-SB0"/>
@@ -400,7 +400,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="OIT-8y-W8k">
                                 <rect key="frame" x="0.0" y="430" width="104" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <fontDescription key="fontDescription" name="Champagne&amp;Limousines" family="Champagne &amp; Limousines" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" title="Sign Up"/>
                                 <connections>
                                     <action selector="signupButt:" destination="wk2-2C-obM" eventType="touchUpInside" id="C63-Pn-aSw"/>
@@ -440,7 +440,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Create an account on NewsTalk" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2Xp-Qo-COX">
                                         <rect key="frame" x="-1" y="55" width="322" height="60"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="Champagne&amp;Limousines" family="Champagne &amp; Limousines" pointSize="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -504,7 +504,7 @@
                                         <rect key="frame" x="30" y="289" width="260" height="48"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.030024570720000001" green="0.25429400610000003" blue="0.41868110629999999" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" name="Champagne&amp;Limousines" family="Champagne &amp; Limousines" pointSize="20"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="Sign Up"/>
                                         <connections>
                                             <action selector="signupButt:" destination="woS-kp-8Ia" eventType="touchUpInside" id="qNP-fh-fPt"/>
@@ -514,7 +514,7 @@
                                         <rect key="frame" x="30" y="345" width="260" height="48"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.063044244099694127" green="0.53395512433947334" blue="0.87912776855968588" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" name="Champagne&amp;Limousines" family="Champagne &amp; Limousines" pointSize="20"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="Terms of Use"/>
                                         <connections>
                                             <action selector="touButt:" destination="woS-kp-8Ia" eventType="touchUpInside" id="Hjq-Jc-HRO"/>
@@ -646,7 +646,7 @@
                                     <segment title="My News"/>
                                     <segment title="Saved News"/>
                                 </segments>
-                                <color key="tintColor" red="0.22918266770000001" green="0.21972086260000001" blue="0.32556678919999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.054901960780000002" green="0.41568627450000001" blue="0.67450980390000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="segControlChanged:" destination="7tm-wg-Xbx" eventType="valueChanged" id="vSF-wx-spJ"/>
                                 </connections>
@@ -740,7 +740,7 @@
                                 </items>
                             </toolbar>
                         </subviews>
-                        <color key="backgroundColor" red="0.22918266770000001" green="0.21972086260000001" blue="0.32556678919999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.030024570720000001" green="0.25429400610000003" blue="0.41868110629999999" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
                         <outlet property="webView" destination="New-6I-Tcl" id="CIA-mx-8yN"/>
@@ -775,7 +775,7 @@
                                     <view contentMode="scaleToFill" misplaced="YES" id="ica-ux-22g" userLabel="line">
                                         <rect key="frame" x="20" y="54" width="280" height="1"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.40877556110000002" green="0.39034056309999998" blue="0.51128472219999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.030024570720000001" green="0.25429400610000003" blue="0.41868110629999999" alpha="1" colorSpace="calibratedRGB"/>
                                     </view>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="paste a URL link" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" id="pBg-7R-kaf">
                                         <rect key="frame" x="20" y="86" width="280" height="30"/>
@@ -790,7 +790,7 @@
                                     <view contentMode="scaleToFill" misplaced="YES" id="id0-dK-uYu" userLabel="line">
                                         <rect key="frame" x="20" y="115" width="280" height="1"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.40877556110000002" green="0.39034056309999998" blue="0.51128472219999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.030024570720000001" green="0.25429400610000003" blue="0.41868110629999999" alpha="1" colorSpace="calibratedRGB"/>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Choose a category" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="sEC-pN-eYM">
                                         <rect key="frame" x="21" y="141" width="280" height="24"/>
@@ -802,19 +802,20 @@
                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" id="slF-Pr-E5b" userLabel="categoriesScrollView">
                                         <rect key="frame" x="0.0" y="173" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.22918266770000001" green="0.21972086260000001" blue="0.32556678919999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.030024570720000001" green="0.25429400610000003" blue="0.41868110629999999" alpha="1" colorSpace="calibratedRGB"/>
                                     </scrollView>
                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="EYG-4e-36t">
                                         <rect key="frame" x="30" y="240" width="260" height="48"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.22918266770000001" green="0.21972086260000001" blue="0.32556678919999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" name="Champagne&amp;Limousines" family="Champagne &amp; Limousines" pointSize="20"/>
+                                        <color key="backgroundColor" red="0.030024570720000001" green="0.25429400610000003" blue="0.41868110629999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="Post Your Link"/>
                                         <connections>
                                             <action selector="postLinkButt:" destination="dTT-fd-tng" eventType="touchUpInside" id="1HB-W5-aSn"/>
                                         </connections>
                                     </button>
                                 </subviews>
+                                <color key="backgroundColor" red="0.054901960780000002" green="0.41568627450000001" blue="0.67450980390000004" alpha="1" colorSpace="calibratedRGB"/>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="0.2784313725" green="0.2666666667" blue="0.34509803919999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -904,7 +905,7 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                 </subviews>
-                                <color key="backgroundColor" red="0.2784313725" green="0.2666666667" blue="0.34509803919999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.030024570720000001" green="0.25429400610000003" blue="0.41868110629999999" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.2784313725" green="0.2666666667" blue="0.34509803919999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

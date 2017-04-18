@@ -41,6 +41,7 @@
 		728010AD1C05BD8100A3FBED /* PostLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728010AC1C05BD8100A3FBED /* PostLink.swift */; };
 		72DF4D8B1C05C5AA009D74BE /* MiniBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DF4D8A1C05C5AA009D74BE /* MiniBrowser.swift */; };
 		72E44EDD1C05F411008B4258 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E44EDC1C05F411008B4258 /* Account.swift */; };
+		823EE9921EA6C9BD004A23D1 /* Gotham-Book.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 823EE9911EA6C9BD004A23D1 /* Gotham-Book.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +81,7 @@
 		728010AC1C05BD8100A3FBED /* PostLink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostLink.swift; sourceTree = "<group>"; };
 		72DF4D8A1C05C5AA009D74BE /* MiniBrowser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiniBrowser.swift; sourceTree = "<group>"; };
 		72E44EDC1C05F411008B4258 /* Account.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		823EE9911EA6C9BD004A23D1 /* Gotham-Book.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-Book.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,7 @@
 				72E44EDC1C05F411008B4258 /* Account.swift */,
 				728010AC1C05BD8100A3FBED /* PostLink.swift */,
 				722C3B8F1C05A81C005F28F1 /* Assets.xcassets */,
+				823EE9911EA6C9BD004A23D1 /* Gotham-Book.ttf */,
 				728010AA1C05B24800A3FBED /* Champagne_Limousines.ttf */,
 				722C3BBD1C05AE65005F28F1 /* Frameworks */,
 				722C3B941C05A81C005F28F1 /* Info.plist */,
@@ -255,6 +258,7 @@
 			files = (
 				722C3B901C05A81C005F28F1 /* Assets.xcassets in Resources */,
 				722C3B8E1C05A81C005F28F1 /* Main.storyboard in Resources */,
+				823EE9921EA6C9BD004A23D1 /* Gotham-Book.ttf in Resources */,
 				728010AB1C05B24800A3FBED /* Champagne_Limousines.ttf in Resources */,
 				725EE5EF1C07525200D8B138 /* tou.html in Resources */,
 			);
