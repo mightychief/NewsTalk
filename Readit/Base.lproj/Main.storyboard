@@ -340,7 +340,7 @@
                                     <view contentMode="scaleToFill" misplaced="YES" id="rjX-u6-dw7" userLabel="line">
                                         <rect key="frame" x="40" y="247" width="240" height="1"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.40877556111509328" green="0.3903405630761162" blue="0.51128472222222221" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.030024570720000001" green="0.25429400610000003" blue="0.41868110629999999" alpha="1" colorSpace="calibratedRGB"/>
                                     </view>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="password" textAlignment="center" minimumFontSize="17" id="q1W-DW-udX">
                                         <rect key="frame" x="40" y="261" width="240" height="30"/>
@@ -355,7 +355,7 @@
                                     <view contentMode="scaleToFill" misplaced="YES" id="0Xr-iv-ipC" userLabel="line">
                                         <rect key="frame" x="40" y="290" width="240" height="1"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.40877556110000002" green="0.39034056309999998" blue="0.51128472219999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.030024570720000001" green="0.25429400610000003" blue="0.41868110629999999" alpha="1" colorSpace="calibratedRGB"/>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="y8A-pp-40s">
                                         <rect key="frame" x="30" y="304" width="260" height="48"/>
@@ -468,7 +468,7 @@
                                     <view contentMode="scaleToFill" misplaced="YES" id="pNd-qU-LGc" userLabel="line">
                                         <rect key="frame" x="40" y="180" width="240" height="1"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.40877556110000002" green="0.39034056309999998" blue="0.51128472219999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.030024570720000001" green="0.25429400610000003" blue="0.41868110629999999" alpha="1" colorSpace="calibratedRGB"/>
                                     </view>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="password" textAlignment="center" minimumFontSize="17" id="YdT-yM-IAc">
                                         <rect key="frame" x="40" y="194" width="240" height="30"/>
@@ -483,7 +483,7 @@
                                     <view contentMode="scaleToFill" misplaced="YES" id="8ql-i9-qyb" userLabel="line">
                                         <rect key="frame" x="40" y="223" width="240" height="1"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.40877556110000002" green="0.39034056309999998" blue="0.51128472219999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.030024570720000001" green="0.25429400610000003" blue="0.41868110629999999" alpha="1" colorSpace="calibratedRGB"/>
                                     </view>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="your email address" textAlignment="center" minimumFontSize="17" id="31e-5F-itW">
                                         <rect key="frame" x="40" y="238" width="240" height="30"/>
@@ -498,7 +498,7 @@
                                     <view contentMode="scaleToFill" misplaced="YES" id="VtX-dt-lhH" userLabel="line">
                                         <rect key="frame" x="40" y="267" width="240" height="1"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.40877556110000002" green="0.39034056309999998" blue="0.51128472219999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.030024570720000001" green="0.25429400610000003" blue="0.41868110629999999" alpha="1" colorSpace="calibratedRGB"/>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ZLm-EW-7xD">
                                         <rect key="frame" x="30" y="289" width="260" height="48"/>

@@ -264,7 +264,7 @@ func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> U
             }
             cell.newsTitleLabel.text = "\(newsClass[NEWS_TITLE]!) (\(domainStr!))"
             cell.newsTitleLabel.layer.cornerRadius = 8
-            cell.votesLabel.text = "\(newsClass[NEWS_VOTES]!)"
+           
             cell.submittedByOutlet.setTitle("by \(userPointer.username!)", for: .normal)
             cell.commentsOutlet.setTitle("\(newsClass[NEWS_COMMENTS]!)", for: .normal)
             cell.categoryOutlet.setTitle("\(newsClass[NEWS_CATEGORY]!)", for: .normal)
@@ -276,8 +276,7 @@ func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> U
             
     
             // Assing tags to the buttons (for later use)
-            cell.upVoteOutlet.tag = (indexPath as NSIndexPath).row
-            cell.downVoteOutlet.tag = (indexPath as NSIndexPath).row
+            
             cell.submittedByOutlet.tag = (indexPath as NSIndexPath).row
             cell.categoryOutlet.tag = (indexPath as NSIndexPath).row
             cell.commentsOutlet.tag = (indexPath as NSIndexPath).row
