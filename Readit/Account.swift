@@ -9,23 +9,19 @@
 
 import UIKit
 import Parse
-import GoogleMobileAds
-import AudioToolbox
+
 
 
 class Account: UIViewController,
 UIAlertViewDelegate,
 UITableViewDelegate,
-UITableViewDataSource,
-GADBannerViewDelegate
+UITableViewDataSource
 {
 
     /* Views */
     @IBOutlet weak var newsTableView: UITableView!
     @IBOutlet weak var segControl: UISegmentedControl!
-    
-    //Ad banners properties
-    var adMobBannerView = GADBannerView()
+
     
     
     
@@ -61,9 +57,7 @@ override func viewDidLoad() {
     backbutt.addTarget(self, action: #selector(backButton), for: .touchUpInside)
     navigationItem.leftBarButtonItem = UIBarButtonItem(customView: backbutt)
     
-    
-    // Init ad banners
-    initAdMobBanner()
+
     
     
     // Call query
@@ -184,7 +178,7 @@ func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> U
                     cell.categoryOutlet.setTitle("\(newsPointer[NEWS_CATEGORY]!) - by \(userPointer.username!)", for: .normal)
                     let postDate = newsPointer.createdAt!
                     let dateFormatter = DateFormatter()
-                    dateFormatter.dateFormat = "dd/MM/yyy"
+                    dateFormatter.dateFormat = "MM/dd/yyy"
                     cell.postDateLabel.text = dateFormatter.string(from: postDate)
                     
                     // Assing tags to the buttons (for later use)
@@ -384,57 +378,6 @@ func alertView(_ alertView: UIAlertView, clickedButtonAt buttonIndex: Int) {
 }
     
     
-
-    
-    
-// MARK: - ADMOB BANNER METHODS
-func initAdMobBanner() {
-        adMobBannerView.adSize =  GADAdSizeFromCGSize(CGSize(width: 320, height: 50))
-        adMobBannerView.frame = CGRect(x: 0, y: self.view.frame.size.height, width: 320, height: 50)
-        adMobBannerView.adUnitID = ADMOB_BANNER_UNIT_ID
-        adMobBannerView.rootViewController = self
-        adMobBannerView.delegate = self
-        view.addSubview(adMobBannerView)
-        let request = GADRequest()
-        adMobBannerView.load(request)
-    }
-    
-    
-    // Hide the banner
-    func hideBanner(_ banner: UIView) {
-        UIView.beginAnimations("hideBanner", context: nil)
-        
-        banner.frame = CGRect(x: 0, y: self.view.frame.size.height, width: banner.frame.size.width, height: banner.frame.size.height)
-        UIView.commitAnimations()
-        banner.isHidden = true
-        
-    }
-    
-    // Show the banner
-    func showBanner(_ banner: UIView) {
-        UIView.beginAnimations("showBanner", context: nil)
-        
-        // Move the banner on the bottom of the screen
-        banner.frame = CGRect(x: 0, y: self.view.frame.size.height - banner.frame.size.height,
-            width: banner.frame.size.width, height: banner.frame.size.height);
-        banner.center.x = view.center.x
-        
-        UIView.commitAnimations()
-        banner.isHidden = false
-        
-    }
-    
-    // AdMob banner available
-    func adViewDidReceiveAd(_ view: GADBannerView) {
-        print("AdMob loaded!")
-        showBanner(adMobBannerView)
-    }
-    
-    // NO AdMob banner available
-    func adView(_ view: GADBannerView, didFailToReceiveAdWithError error: GADRequestError) {
-        print("AdMob Can't load ads right now, they'll be available later \n\(error)")
-        hideBanner(adMobBannerView)
-    }
     
     
     
