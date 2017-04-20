@@ -11,8 +11,7 @@
 import UIKit
 import Parse
 import MessageUI
-import GoogleMobileAds
-import AudioToolbox
+
 
 
 
@@ -52,7 +51,6 @@ UIAlertViewDelegate,
 UITableViewDelegate,
 UITableViewDataSource,
 MFMailComposeViewControllerDelegate,
-GADBannerViewDelegate,
 UITextFieldDelegate
 {
 
@@ -64,9 +62,6 @@ UITextFieldDelegate
     @IBOutlet weak var searchTxt: UITextField!
     
     @IBOutlet weak var sortView: UIView!
-    
-    //Ad banners properties
-    var adMobBannerView = GADBannerView()
     
     
     
@@ -108,8 +103,7 @@ override func viewDidLoad() {
     // Layouts
     newsTableView.contentInset = UIEdgeInsetsMake(-50, 0, 0, 0)
     
-    // Init ad banners
-    initAdMobBanner()
+
 }
 
     
@@ -830,60 +824,6 @@ func hideSortView() {
     
     callQueryNews()
 }
-    
-
-
-    
-    
-    
-// MARK: - ADMOB BANNER METHODS ------------------------
-func initAdMobBanner() {
-        adMobBannerView.adSize =  GADAdSizeFromCGSize(CGSize(width: 320, height: 50))
-        adMobBannerView.frame = CGRect(x: 0, y: self.view.frame.size.height, width: 320, height: 50)
-        adMobBannerView.adUnitID = ADMOB_BANNER_UNIT_ID
-        adMobBannerView.rootViewController = self
-        adMobBannerView.delegate = self
-        view.addSubview(adMobBannerView)
-        let request = GADRequest()
-        adMobBannerView.load(request)
-    }
-    
-    
-    // Hide the banner
-    func hideBanner(_ banner: UIView) {
-        UIView.beginAnimations("hideBanner", context: nil)
-        
-        banner.frame = CGRect(x: 0, y: self.view.frame.size.height, width: banner.frame.size.width, height: banner.frame.size.height)
-        UIView.commitAnimations()
-        banner.isHidden = true
-        
-    }
-    
-    // Show the banner
-    func showBanner(_ banner: UIView) {
-        UIView.beginAnimations("showBanner", context: nil)
-        
-        // Move the banner on the bottom of the screen
-        banner.frame = CGRect(x: 0, y: self.view.frame.size.height - banner.frame.size.height,
-            width: banner.frame.size.width, height: banner.frame.size.height);
-        banner.center.x = view.center.x
-        
-        UIView.commitAnimations()
-        banner.isHidden = false
-        
-    }
-
-    // AdMob banner available
-    func adViewDidReceiveAd(_ view: GADBannerView) {
-        print("AdMob loaded!")
-        showBanner(adMobBannerView)
-    }
-    
-    // NO AdMob banner available
-    func adView(_ view: GADBannerView, didFailToReceiveAdWithError error: GADRequestError) {
-        print("AdMob Can't load ads right now, they'll be available later \n\(error)")
-        hideBanner(adMobBannerView)
-    }
     
 
     
