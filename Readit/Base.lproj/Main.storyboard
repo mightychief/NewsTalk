@@ -39,7 +39,7 @@
                                                     <rect key="frame" x="13" y="8" width="244" height="62"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
-                                                    <color key="textColor" red="0.2784313725" green="0.2666666667" blue="0.34509803919999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="textColor" red="0.069167212041884807" green="0.069167212041884807" blue="0.069167212041884807" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="s2m-ig-9H2">
@@ -94,7 +94,7 @@
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="13"/>
                                                     <state key="normal" title="share">
-                                                        <color key="titleColor" red="0.2784313725" green="0.2666666667" blue="0.34509803919999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="titleColor" red="0.054901960780000002" green="0.41568627450000001" blue="0.67450980390000004" alpha="1" colorSpace="calibratedRGB"/>
                                                     </state>
                                                     <connections>
                                                         <action selector="shareButt:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ABg-51-z4i"/>
@@ -105,7 +105,7 @@
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="13"/>
                                                     <state key="normal" title="save">
-                                                        <color key="titleColor" red="0.2784313725" green="0.2666666667" blue="0.34509803919999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="titleColor" red="0.054901960780000002" green="0.41568627450000001" blue="0.67450980390000004" alpha="1" colorSpace="calibratedRGB"/>
                                                     </state>
                                                     <connections>
                                                         <action selector="saveButt:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JiV-vm-6Yj"/>
@@ -116,7 +116,7 @@
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="13"/>
                                                     <state key="normal" title="report">
-                                                        <color key="titleColor" red="0.2784313725" green="0.2666666667" blue="0.34509803919999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="titleColor" red="0.054901960780000002" green="0.41568627450000001" blue="0.67450980390000004" alpha="1" colorSpace="calibratedRGB"/>
                                                     </state>
                                                     <connections>
                                                         <action selector="reportButt:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3lW-J6-Jxn"/>
@@ -569,7 +569,7 @@
                                                     <rect key="frame" x="13" y="8" width="247" height="62"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
-                                                    <color key="textColor" red="0.2784313725" green="0.2666666667" blue="0.34509803919999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="textColor" red="0.069167212039999995" green="0.069167212039999995" blue="0.069167212039999995" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="iwe-BA-x0Q">
@@ -595,7 +595,7 @@
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="13"/>
                                                     <state key="normal" title="share">
-                                                        <color key="titleColor" red="0.2784313725" green="0.2666666667" blue="0.34509803919999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="titleColor" red="0.054901960780000002" green="0.41568627450000001" blue="0.67450980390000004" alpha="1" colorSpace="calibratedRGB"/>
                                                     </state>
                                                     <connections>
                                                         <action selector="shareButt:" destination="7tm-wg-Xbx" eventType="touchUpInside" id="Rqs-7y-Ebx"/>
@@ -856,14 +856,14 @@
                                                     <rect key="frame" x="8" y="36" width="303" height="50"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="13"/>
-                                                    <color key="textColor" red="0.2784313725" green="0.2666666667" blue="0.34509803919999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="textColor" red="0.069167212039999995" green="0.069167212039999995" blue="0.069167212039999995" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="loading..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" id="Bjm-v5-eus" userLabel="usernameLabel">
                                                     <rect key="frame" x="17" y="11" width="207" height="17"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="12"/>
-                                                    <color key="textColor" red="0.40877556110000002" green="0.39034056309999998" blue="0.51128472219999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="textColor" red="0.030024570720000001" green="0.25429400610000003" blue="0.41868110629999999" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <view alpha="0.29999999999999999" contentMode="scaleToFill" id="1HQ-SQ-iJb" userLabel="separator">
@@ -908,7 +908,7 @@
                                 <color key="backgroundColor" red="0.030024570720000001" green="0.25429400610000003" blue="0.41868110629999999" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.2784313725" green="0.2666666667" blue="0.34509803919999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.030024570720000001" green="0.25429400610000003" blue="0.41868110629999999" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
                     <connections>

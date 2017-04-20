@@ -147,7 +147,7 @@ func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> U
     cell.commentLabel.text = "\(commClass[COMMENTS_TEXT]!)"
     let postDate = commClass.createdAt!
     let dateFormatter = DateFormatter()
-    dateFormatter.dateFormat = "dd/MM/yyyy"
+    dateFormatter.dateFormat = "MM/dd/yyyy"
     cell.dateLabel.text = dateFormatter.string(from: postDate)
     
     

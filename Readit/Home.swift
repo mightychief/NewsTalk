@@ -264,7 +264,7 @@ func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> U
             cell.categoryOutlet.setTitle("\(newsClass[NEWS_CATEGORY]!)", for: .normal)
             let postDate = newsClass.createdAt!
             let dateFormatter = DateFormatter()
-            dateFormatter.dateFormat = "dd/MM/yyyy"
+            dateFormatter.dateFormat = "MM/dd/yyyy"
             cell.postDateLabel.text = dateFormatter.string(from: postDate)
             
             
