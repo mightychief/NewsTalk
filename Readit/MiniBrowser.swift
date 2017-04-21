@@ -8,6 +8,7 @@
  -----------------------------------*/
 
 import UIKit
+import Firebase
 
 
 
@@ -77,20 +78,25 @@ func webViewDidFinishLoad(_ webView: UIWebView) {
     // Go back
     case 0:
         webView.goBack()
+        FIRAnalytics.logEvent(withName: "browser_goback", parameters: nil)
     
     // Go next
     case 1:
         webView.goForward()
+        FIRAnalytics.logEvent(withName: "browser_gonext", parameters: nil)
     
     // Refresh page
     case 2:
         webView.reload()
+        FIRAnalytics.logEvent(withName: "refresh_page", parameters: nil)
         
     // Share page
     case 3:
         let messageStr  = "Check this out: \(urlString) - from #\(APP_NAME)"
         let img = UIImage(named: "logo")
         let shareItems = [messageStr, img!] as [Any]
+        
+        FIRAnalytics.logEvent(withName: "share_page", parameters: nil)
         
         let activityViewController:UIActivityViewController = UIActivityViewController(activityItems: shareItems, applicationActivities: nil)
         activityViewController.excludedActivityTypes = [UIActivityType.print, UIActivityType.copyToPasteboard, UIActivityType.postToVimeo]

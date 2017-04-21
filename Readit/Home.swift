@@ -11,7 +11,7 @@
 import UIKit
 import Parse
 import MessageUI
-
+import Firebase
 
 
 
@@ -501,6 +501,7 @@ func categoryButt(_ sender:UIButton) {
     searchText = ""
     categoryStr = butt.titleLabel!.text!
     callQueryNews()
+    FIRAnalytics.logEvent(withName: "category_button", parameters: nil)
     self.title = "Latest in \(categoryStr)"
 }
     
@@ -517,6 +518,7 @@ func categoryButt(_ sender:UIButton) {
     categoryStr = ""
     searchText = ""
     callQueryNews()
+    FIRAnalytics.logEvent(withName: "submittedby_button", parameters: nil)
     
     self.title = "Latest by \(aUser!.username!)"
 }
@@ -530,6 +532,7 @@ func categoryButt(_ sender:UIButton) {
     searchText = ""
     categoryStr = butt.titleLabel!.text!
     callQueryNews()
+    FIRAnalytics.logEvent(withName: "categorycell_button", parameters: nil)
 }
     
     
@@ -539,6 +542,8 @@ func categoryButt(_ sender:UIButton) {
     let butt = sender as! UIButton
     var newsClass = PFObject(className: NEWS_CLASS_NAME)
     newsClass = newsArray[butt.tag]
+    
+    FIRAnalytics.logEvent(withName: "comments_button", parameters: nil)
     
     let commVC = storyboard?.instantiateViewController(withIdentifier: "Comments") as! Comments
     commVC.newsObject = newsClass
@@ -553,6 +558,8 @@ func categoryButt(_ sender:UIButton) {
     let butt = sender as! UIButton
     var newsClass = PFObject(className: NEWS_CLASS_NAME)
     newsClass = newsArray[butt.tag]
+    
+    FIRAnalytics.logEvent(withName: "share_button", parameters: nil)
     
     let messageStr  = "\(newsClass[NEWS_TITLE]!) - from #\(APP_NAME)"
     let img = UIImage(named: "h1")!
@@ -578,6 +585,8 @@ func categoryButt(_ sender:UIButton) {
 // MARK: - SAVE NEWS BUTTON
 @IBAction func saveButt(_ sender: AnyObject) {
     let butt = sender as! UIButton
+ 
+    FIRAnalytics.logEvent(withName: "save_news", parameters: nil)
     
     // YOU ARE LOGGED IN
     if PFUser.current() != nil {
@@ -636,7 +645,7 @@ func categoryButt(_ sender:UIButton) {
     let indexP = IndexPath(row: butt.tag, section: 0)
     var newsClass = PFObject(className: NEWS_CLASS_NAME)
     newsClass = newsArray[butt.tag]
-
+FIRAnalytics.logEvent(withName: "report_button", parameters: nil)
     
     let alert = UIAlertController(title: APP_NAME,
             message: "Report this news as inappropriate",
@@ -676,6 +685,7 @@ func categoryButt(_ sender:UIButton) {
     
 //   MARK: - SEARCH BUTTON
 @IBAction func searchButt(_ sender: AnyObject) {
+    FIRAnalytics.logEvent(withName: "search_button", parameters: nil)
     searchViewiSVisible = !searchViewiSVisible
     
     if searchViewiSVisible { showSearchView()
@@ -720,6 +730,7 @@ return true
     
 // MARK: - USER BUTTON
 @IBAction func userButt(_ sender: AnyObject) {
+    FIRAnalytics.logEvent(withName: "user_button", parameters: nil)
     if PFUser.current() != nil {
         let accVC = storyboard?.instantiateViewController(withIdentifier: "Account") as! Account
         navigationController?.pushViewController(accVC, animated: true)
@@ -744,7 +755,8 @@ return true
         let plVC = storyboard?.instantiateViewController(withIdentifier: "PostLink") as! PostLink
         navigationController?.pushViewController(plVC, animated: true)
             
-            
+FIRAnalytics.logEvent(withName: "add_link", parameters: nil)
+        
     // USER IS NOT LOGGED IN/REGISTERED
     } else {
         let alert = UIAlertView(title: APP_NAME,
@@ -799,6 +811,7 @@ func hideSortView() {
    
     // Call query
     callQueryNews()
+    FIRAnalytics.logEvent(withName: "date_button", parameters: nil)
 }
 
     
@@ -823,6 +836,7 @@ func hideSortView() {
     hideSortView()
     
     callQueryNews()
+    FIRAnalytics.logEvent(withName: "latest_news", parameters: nil)
 }
     
 

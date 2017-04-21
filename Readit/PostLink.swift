@@ -10,6 +10,7 @@
 
 import UIKit
 import Parse
+import Firebase
 
 
 class PostLink: UIViewController,
@@ -131,6 +132,7 @@ func categoryButt(_ sender:UIButton) {
     showHUD()
     titleTxt.resignFirstResponder()
     urlTxt.resignFirstResponder()
+    FIRAnalytics.logEvent(withName: "postlink_button", parameters: nil)
     
     let newsClass = PFObject(className: NEWS_CLASS_NAME)
     let currentUser = PFUser.current()!

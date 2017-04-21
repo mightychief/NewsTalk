@@ -1,0 +1,6 @@
+framework module Pods_Readit {
+  umbrella header "Pods-Readit-umbrella.h"
+
+  export *
+  module * { export * }
+}

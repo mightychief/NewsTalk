@@ -9,6 +9,7 @@
 
 import UIKit
 import Parse
+import Firebase
 
 
 
@@ -259,6 +260,7 @@ func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEdi
 // MARK: - SWITCH YOUR NEWS / SAVED NEWS
 @IBAction func segControlChanged(_ sender: UISegmentedControl) {
     print("\(segControl.selectedSegmentIndex)")
+    FIRAnalytics.logEvent(withName: "news_switcher", parameters: nil)
     
     // SHOW MY NEWS
     if sender.selectedSegmentIndex == 0 {
@@ -280,6 +282,8 @@ func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEdi
 // COMMENTS BUTTON
 @IBAction func commentsButt(_ sender: AnyObject) {
     let butt = sender as! UIButton
+    
+    FIRAnalytics.logEvent(withName: "account_comments", parameters: nil)
     
     if segControl.selectedSegmentIndex == 0 {
         var newsClass = PFObject(className: NEWS_CLASS_NAME)
@@ -313,6 +317,7 @@ func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEdi
     let butt = sender as! UIButton
     var messageStr = ""
     var img = UIImage()
+    FIRAnalytics.logEvent(withName: "account_share", parameters: nil)
     
     // SHARE ONE OF YOUR NEWS
     if segControl.selectedSegmentIndex == 0 {
